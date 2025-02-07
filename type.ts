@@ -1,18 +1,32 @@
+import React from "react"
+
 export interface weatherDataObject {
-  main: {
-    temp: number,
-    pressure: number,
-    humidity: number
-  },
-  coord: {
-    lat: number,
-    lon: number
-  },
-  wind: {
-    speed: number,
-    deg: number
-  },
-  sys: {
-    country: string
-  }
+    sys: {
+        country: string
+    },
+    coord: {
+        lat: number,
+        lon: number
+    },
+    main: {
+        temp: number,
+        pressure: number,
+        humidity: number
+    },
+    wind: {
+        speed: number,
+        deg: number
+    },
+}
+
+export interface inputProps {
+    onToggle: () => void,
+    unit: string,
+    inputValue: string,
+    onValidation: () => void,
+    setInputValue: React.Dispatch<React.SetStateAction<string>>,
+}
+
+export interface outputProps extends weatherDataObject{
+    unit: 'metric' | 'imperial'
 }
