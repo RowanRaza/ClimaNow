@@ -1,0 +1,1 @@
+export const toFahrenheit = (C : number) => ((9/5)*C)+32

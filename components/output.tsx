@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
-import { outputProps, weatherDataObject } from "../type";
+import { outputProps } from "../type";
+import { toFahrenheit } from "../utils";
 
 export function Output({sys, coord, main, wind, unit} : outputProps) : React.JSX.Element {
     return(
@@ -9,14 +10,14 @@ export function Output({sys, coord, main, wind, unit} : outputProps) : React.JSX
             <Text style={{color: '#fff'}}>Country: {sys.country}, lon : {coord.lon}, lat : {coord.lat}</Text>
             <View style={style.outputDataContainer}>
                 <View>
-                    <Text>Temp : {main.temp} {unit === 'metric' ? '°C' : '°F'}</Text>
+                    <Text>Temp : {unit === 'metric' ? (main.temp + '°C') : (toFahrenheit(main.temp) + '°F')}</Text>
                     <Text>Pressure : {main.pressure} </Text>
                     <Text>Humidity : {main.humidity}% </Text>
                 </View>
                 <View>
                     <Text>Wind</Text>
                     <Text>Direction : {wind.deg}° </Text>
-                    <Text>Speed : {wind.speed}m/s</Text>
+                    <Text>Speed : {wind.speed}km/h</Text>
                 </View>
             </View>
         </View>

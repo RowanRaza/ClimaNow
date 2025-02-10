@@ -13,7 +13,7 @@ export default function App() : React.JSX.Element {
   
   const getWeather = async () => {
     try{
-      const data = await fetchWeatherData(inputValue.trim(), units)
+      const data = await fetchWeatherData(inputValue.trim())
       setWeatherData(data);
       console.log(data);
     }catch (error) {
