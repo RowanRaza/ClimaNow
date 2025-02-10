@@ -1,4 +1,5 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ClimaNow
+![Screenshot][images/Screenshot_2025-02-10-13-14-07-618_com.climanow.jpg]
 
 # Getting Started
 
