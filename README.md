@@ -1,5 +1,5 @@
 # ClimaNow
-![Screenshot][images/Screenshot_2025-02-10-13-14-07-618_com.climanow.jpg]
+![Screenshot](images/Screenshot_2025-02-10-13-14-07-618_com.climanow.jpg)
 
 # Getting Started
 
