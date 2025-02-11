@@ -1,4 +1,5 @@
 # ClimaNow
+A simple react native weather app using openweathermap api, axios, react-native cli.
 ![Screenshot](images/Screenshot_2025-02-10-13-14-07-618_com.climanow.jpg)
 
 # Getting Started
